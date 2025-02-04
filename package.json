@@ -13,7 +13,10 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "vitest run"
+    "test": "vitest run",
+    "update-patch": "npm version patch && git push origin main && git push origin --tags",
+    "update-minor": "npm version minor && git push origin main && git push origin --tags",
+    "update-major": "npm version major && git push origin main && git push origin --tags"
   },
   "author": "GukSu",
   "license": "MIT",
