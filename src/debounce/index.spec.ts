@@ -1,5 +1,5 @@
 import { describe, it, vi, expect } from "vitest";
-import { debounce } from "./index";
+import debounce from ".";
 
 describe("debounce", () => {
   it("should call the function after the specified delay", async () => {

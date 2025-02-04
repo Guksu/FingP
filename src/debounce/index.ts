@@ -1,14 +1,23 @@
-export const debounce = <T extends (...args: any[]) => void>(
+/**
+ * Creates a debounced function that delays the execution of the provided function until after the specified delay.
+ *
+ * @param fn - The function to debounce.
+ * @param delay - The number of milliseconds to delay.
+ * @returns A debounced version of the provided function.
+ */
+const debounce = <T extends (...args: any[]) => void>(
   fn: T,
   delay: number
-) => {
-  let timer: ReturnType<typeof setTimeout> | null = null;
+): ((...args: Parameters<T>) => void) => {
+  let timer: NodeJS.Timeout | null = null;
 
-  return ((...args: Parameters<T>) => {
+  return (...args: Parameters<T>) => {
     if (timer) clearTimeout(timer);
 
     timer = setTimeout(() => {
       fn(...args);
     }, delay);
-  }) as T;
+  };
 };
+
+export default debounce;
