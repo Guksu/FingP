@@ -8,4 +8,4 @@ yarn.lock
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
+/dist
