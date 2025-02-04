@@ -1,6 +1,6 @@
 {
   "name": "fingp",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "TypeScript utility for Developer",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -14,9 +14,9 @@
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
-    "update-patch": "npm version patch && git push origin main && git push origin --tags",
+    "update-major": "npm version major && git push origin main && git push origin --tags",
     "update-minor": "npm version minor && git push origin main && git push origin --tags",
-    "update-major": "npm version major && git push origin main && git push origin --tags"
+    "update-patch": "npm version patch && git push origin main && git push origin --tags"
   },
   "author": "GukSu",
   "license": "MIT",
