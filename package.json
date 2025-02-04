@@ -1,0 +1,21 @@
+{
+  "name": "fingp",
+  "version": "1.0.0",
+  "description": "TypeScript utility for Developer",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "author": "GukSu",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
