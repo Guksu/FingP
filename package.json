@@ -1,6 +1,6 @@
 {
   "name": "fingp",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "TypeScript utility for Developer",
   "main": "dist/index.js",
   "module": "dist/index.js",
